@@ -1,0 +1,86 @@
+[
+  {
+    "id": "f1-001",
+    "categorie": "F1",
+    "libelle": "Quel pilote détient le record de victoires en Formule 1 ?",
+    "options": ["Ayrton Senna", "Michael Schumacher", "Lewis Hamilton", "Sebastian Vettel"],
+    "bonne_reponse": "Lewis Hamilton"
+  },
+  {
+    "id": "f1-002",
+    "categorie": "F1",
+    "libelle": "Quelle écurie a remporté le plus de titres constructeurs en F1 ?",
+    "options": ["McLaren", "Red Bull Racing", "Ferrari", "Mercedes"],
+    "bonne_reponse": "Ferrari"
+  },
+  {
+    "id": "f1-003",
+    "categorie": "F1",
+    "libelle": "Sur quel circuit se déroule le Grand Prix de Monaco ?",
+    "options": ["Circuit de Spa", "Circuit de Monte-Carlo", "Circuit de Monza", "Circuit de Silverstone"],
+    "bonne_reponse": "Circuit de Monte-Carlo"
+  },
+  {
+    "id": "motogp-001",
+    "categorie": "MotoGP",
+    "libelle": "Quel pilote est surnommé 'The Doctor' en MotoGP ?",
+    "options": ["Marc Márquez", "Jorge Lorenzo", "Valentino Rossi", "Casey Stoner"],
+    "bonne_reponse": "Valentino Rossi"
+  },
+  {
+    "id": "motogp-002",
+    "categorie": "MotoGP",
+    "libelle": "Combien de titres mondiaux MotoGP Valentino Rossi a-t-il remportés ?",
+    "options": ["5", "7", "9", "11"],
+    "bonne_reponse": "9"
+  },
+  {
+    "id": "motogp-003",
+    "categorie": "MotoGP",
+    "libelle": "Quelle marque de moto domine le championnat MotoGP depuis 2013 ?",
+    "options": ["Yamaha", "Ducati", "Honda", "Suzuki"],
+    "bonne_reponse": "Honda"
+  },
+  {
+    "id": "nba-001",
+    "categorie": "NBA",
+    "libelle": "Quel joueur NBA est surnommé 'King James' ?",
+    "options": ["Kobe Bryant", "Michael Jordan", "LeBron James", "Kevin Durant"],
+    "bonne_reponse": "LeBron James"
+  },
+  {
+    "id": "nba-002",
+    "categorie": "NBA",
+    "libelle": "Quelle équipe NBA a remporté le plus de titres ?",
+    "options": ["Chicago Bulls", "Los Angeles Lakers", "Boston Celtics", "Golden State Warriors"],
+    "bonne_reponse": "Boston Celtics"
+  },
+  {
+    "id": "nba-003",
+    "categorie": "NBA",
+    "libelle": "En quelle année Michael Jordan a-t-il pris sa première retraite ?",
+    "options": ["1991", "1993", "1995", "1998"],
+    "bonne_reponse": "1993"
+  },
+  {
+    "id": "manga-001",
+    "categorie": "Manga",
+    "libelle": "Quel est le manga le plus vendu de tous les temps ?",
+    "options": ["Naruto", "Dragon Ball", "One Piece", "Bleach"],
+    "bonne_reponse": "One Piece"
+  },
+  {
+    "id": "manga-002",
+    "categorie": "Manga",
+    "libelle": "Qui est l'auteur de 'Death Note' ?",
+    "options": ["Eiichiro Oda", "Tsugumi Ohba", "Masashi Kishimoto", "Akira Toriyama"],
+    "bonne_reponse": "Tsugumi Ohba"
+  },
+  {
+    "id": "manga-003",
+    "categorie": "Manga",
+    "libelle": "Dans Naruto, quel est le nom du démon renard à neuf queues ?",
+    "options": ["Shukaku", "Kurama", "Matatabi", "Son Gokū"],
+    "bonne_reponse": "Kurama"
+  }
+]
