@@ -6,7 +6,7 @@ import quizReducer from '../reducer/quizReducer';
 const initial = { questions: [], currentIndex: 0, score: 0, status: 'idle', answers: [] };
 
 function Quiz() {
-  const { data, loading } = useFetch('/questions.json');
+  const { data, loading } = useFetch('http://localhost:5001/api/questions');  
   const [state, dispatch] = useReducer(quizReducer, initial);
   const timer = useRef(null);
   const navigate = useNavigate();
@@ -33,10 +33,19 @@ function Quiz() {
   }, [state.status]);
 
   useEffect(() => {
-    if (state.status === 'finished') {
-      navigate('/resultats', { state: { score: state.score, total: state.questions.length } });
-    }
-  }, [state.status, navigate, state.score, state.questions.length]);
+  if (state.status === 'finished') {
+    const token = localStorage.getItem('polyquiz_token');
+    fetch('http://localhost:5001/api/users/score', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${token}`
+      },
+      body: JSON.stringify({ score: state.score })
+    });
+    navigate('/resultats', { state: { score: state.score, total: state.questions.length } });
+  }
+}, [state.status]);
 
   if (loading) {
     return (
@@ -61,7 +70,7 @@ function Quiz() {
         Question {state.currentIndex + 1} / {state.questions.length} — Catégorie : {question.categorie}
       </p>
       
-      <h2>{question.libelle}</h2>
+      <h2>{question.text}</h2>
       
       <div className="options-container">
         {question.options.map(opt => (

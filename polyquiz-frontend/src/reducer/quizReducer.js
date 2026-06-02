@@ -4,7 +4,7 @@ function quizReducer(state, action) {
       return { ...state, questions: action.payload, currentIndex: 0, score: 0, status: 'active', answers: [] };
     case 'ANSWER_QUESTION':
       const question = state.questions[state.currentIndex];
-      const correct = action.payload === question.bonne_reponse;
+      const correct = action.payload === question.correctAnswer;
       return {
         ...state,
         score: correct ? state.score + 1 : state.score,

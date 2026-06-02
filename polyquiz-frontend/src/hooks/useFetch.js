@@ -6,7 +6,9 @@ function useFetch(url) {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch(url)
+    const token = localStorage.getItem('polyquiz_token');
+    const headers = token ? { Authorization: `Bearer ${token}` } : {};
+    fetch(url, { headers })
       .then(r => r.json())
       .then(d => { setData(d); setLoading(false); })
       .catch(e => { setError(e); setLoading(false); });

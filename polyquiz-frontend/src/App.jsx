@@ -4,6 +4,7 @@ import ProtectedRoute from './components/ProtectedRoute';
 import Home from './pages/Home';
 import Quiz from './pages/Quiz';
 import Resultats from './pages/Resultats';
+import Leaderboard from './pages/Leaderboard';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/quiz" element={<ProtectedRoute><Quiz /></ProtectedRoute>} />
           <Route path="/resultats" element={<ProtectedRoute><Resultats /></ProtectedRoute>} />
+          <Route path="/leaderboard" element={<ProtectedRoute><Leaderboard /></ProtectedRoute>} />
         </Routes>
       </BrowserRouter>
     </UserProvider>
